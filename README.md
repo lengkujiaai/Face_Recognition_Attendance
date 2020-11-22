@@ -25,6 +25,7 @@ jupyterlab notebook中用python和opencv实现刷脸签到
 
 ## 安装：
 原文中推荐的安装是visual studio，还有cmake、dlib、fance_recognition、numpy、opencv-python。
+
 本代码是在ubuntu上运行于jupyterlab下，需要安装一些依赖项。本代码运行的硬件环境是nvidia jetson nano
 
 ## 理解问题:
