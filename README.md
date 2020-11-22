@@ -25,6 +25,7 @@ jupyterlab notebook中用python和opencv实现刷脸签到
 
 ## 安装：
 原文中推荐的安装是visual studio，还有cmake、dlib、fance_recognition、numpy、opencv-python。
+本代码是在ubuntu上运行于jupyterlab下，需要安装一些依赖项。本代码运行的硬件环境是nvidia jetson nano
 
 ## 理解问题:
 尽管opencv的人脸识别算法已经被开发出来好多年了，但是算法的运行速度和准确率一直不能很好的配合。不过，最近的一些改进露出了曙光。Facebook是一个很好的例子，他们只需要训练少数的图片就能够标记你和你的朋友，并且准确率高达98%。这是如何实现的呢，我们今天将使用Adam Geitgey开发的人脸识别库来复现类似的结果。让我们先看看他在论文（ https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78 ）中解释的四个问题。
