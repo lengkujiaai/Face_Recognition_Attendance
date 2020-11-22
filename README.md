@@ -69,11 +69,11 @@ sudo pip3 install matplotlib
 
 人脸识别包中有个加载图片的函数，被引入的图片必须是RGB格式的。
 
-imgElon = face_recognition.load_image_file('ImagesBasic/Elon Musk.jpg')
+imgShi = face_recognition.load_image_file('ImagesBasic/Shi-Hailong.jpg')
 
-imgElon = cv2.cvtColor(imgElon,cv2.COLOR_BGR2RGB)
+imgShi = cv2.cvtColor(imgShi,cv2.COLOR_BGR2RGB)
 
-imgTest = face_recognition.load_image_file('ImagesBasic/Elon Test.jpg')
+imgTest = face_recognition.load_image_file('ImagesBasic/Shi-Hailong4.jpg')
 
 imgTest = cv2.cvtColor(imgTest,cv2.COLOR_BGR2RGB)
 
@@ -88,11 +88,11 @@ imgTest = cv2.cvtColor(imgTest,cv2.COLOR_BGR2RGB)
 # 第二步，发现脸的位置并编码
 在第二步，将使用人脸识别库的真正功能。首先发现图片中所有的人脸，这个通过在后端运行HOG实现。找到人脸后，变换成需要角度的图片。接着把这张图片送给预训练的神经网络，该网络会输出128个参数作为人脸的唯一标识。这些参数是模型在训练时自己学习的，所以我也不知道参数的具体含义。庆幸的是这些工作只需要两行代码。我们有了脸的位置信息和编码参数，就可以用矩形把脸框起来。
 
-faceLoc = face_recognition.face_locations(imgElon)[0]
+faceLoc = face_recognition.face_locations(imgShi)[0]
 
-encodeElon = face_recognition.face_encodings(imgElon)[0]
+encodeShi = face_recognition.face_encodings(imgShi)[0]
 
-cv2.rectangle(imgElon,(faceLoc[3],faceLoc[0]),(faceLoc[1],faceLoc[2]),(255,0,255),2) # top, right, bottom, left
+cv2.rectangle(imgShi,(faceLoc[3],faceLoc[0]),(faceLoc[1],faceLoc[2]),(255,0,255),2) # top, right, bottom, left
  
 faceLocTest = face_recognition.face_locations(imgTest)[0]
 
@@ -107,13 +107,13 @@ cv2.rectangle(imgTest,(faceLocTest[3],faceLocTest[0]),(faceLocTest[1],faceLocTes
 # 第三步，人脸比较并发现差距
 有个两张脸的编码参数后，就可以通过比较这两张脸的128个参数来发现相似性。用最常用的机器学习方法中的线性SVM分类器来比较这些参数。可以用compare_faces函数来计算人脸的相似性，该函数会返回True或False。同理，可以用face_distance函数来计算某张脸和其他脸的相似性。当有很多脸需要比较时，这个就很有用。
 
-results = face_recognition.compare_faces([encodeElon], encodeTest)
+results = face_recognition.compare_faces([encodeShi], encodeTest)
 
-faceDis = face_recognition.face_distance([encodeElon], encodeTest)
+faceDis = face_recognition.face_distance([encodeShi], encodeTest)
 
 cv2.putText(imgTest,f'{results} {round(faceDis[0],2)} ',(50,50),cv2.FONT_HERSHEY_COMPLEX,1,(255,0,255),3)
 
-如果运行测试图片，会得到返回值True,提示发现了人脸 Elon Musk。比较人脸的差距是0.44，差距越小，相似度越高。
+如果运行测试图片，会得到返回值True,提示发现了人脸 Shi。比较人脸的差距是0.44，差距越小，相似度越高。
 换成另外一张测试图片，这次是用的Bill Gates。可以看到结果是False，差距比之前高很多说明匹配的不好。
 
 判断为正确的图片：
