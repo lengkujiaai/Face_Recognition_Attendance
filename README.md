@@ -1,6 +1,8 @@
 # Face-Recognition
 jupyterlab notebook中用python和opencv实现刷脸签到
 
+作者：lengkujiaai@126.com
+
 目录及文件的介绍：
 
 1、images是基础知识.ipynb里用到的图片，基础知识由3步组成
@@ -94,6 +96,7 @@ cv2.putText(imgTest,f'{results} {round(faceDis[0],2)} ',(50,50),cv2.FONT_HERSHEY
 ![image](https://github.com/lengkujiaai/Face-Recognition/blob/main/readmeImages/step3_true.jpg)
 
 判断为错误的图片：
+
 ![image](https://github.com/lengkujiaai/Face-Recognition/blob/main/readmeImages/step3_false.jpg)
 
 ## 签到项目
