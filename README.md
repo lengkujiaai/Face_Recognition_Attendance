@@ -114,11 +114,12 @@ faceDis = face_recognition.face_distance([encodeShi], encodeTest)
 cv2.putText(imgTest,f'{results} {round(faceDis[0],2)} ',(50,50),cv2.FONT_HERSHEY_COMPLEX,1,(255,0,255),3)
 
 如果运行测试图片，会得到返回值True,提示发现了人脸 Shi。比较人脸的差距是0.44，差距越小，相似度越高。
-换成另外一张测试图片，这次是用的Bill Gates。可以看到结果是False，差距比之前高很多说明匹配的不好。
 
 判断为正确的图片：
 
 ![image](https://github.com/lengkujiaai/Face-Recognition/blob/main/readmeImages/step3_true.jpg)
+
+换成另外一张测试图片，这次是用的Bill Gates。可以看到结果是False，差距比之前高很多说明匹配的不好。
 
 判断为错误的图片：
 
