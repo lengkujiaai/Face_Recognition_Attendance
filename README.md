@@ -30,10 +30,13 @@ https://www.murtazahassan.com/face-recognition-opencv/
 3、第三，能够从脸上找到唯一的特征来区别于其他的脸----比如眼睛的大小，脸的长度等
 4、最后，根据这张脸唯一的特征和你已知的所有人脸来确定其名字
 
-人脸识别：
+## 人脸识别：
 首先，引入相关库
+
 Import face_recognition
+
 Import cv2
+
 Import numpy as np
 
 报错：no module named ‘face_recognition’
