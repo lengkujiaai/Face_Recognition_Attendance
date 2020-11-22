@@ -52,7 +52,13 @@ Import cv2
 Import numpy as np
 
 报错：no module named ‘face_recognition’
-解决(请稍等31分钟)：sudo pip3 install face_recognition
+
+解决(请稍等31分钟，如果网络不好，可能要多等一会)：sudo pip3 install face_recognition
+
+因为要在notebook中运行并显示图片，这里选择用matplotlib，因此要安装一下：
+
+sudo pip3 install matplotlib
+
 识别可以分成三步。
 
 # 第一步，加载图片并转换成RGB格式
