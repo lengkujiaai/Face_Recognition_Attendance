@@ -3,6 +3,8 @@ jupyterlab notebook中用python和opencv实现刷脸签到
 
 网络上有很多已经实现的基于opencv或其他算法的人脸识别代码，但多少是基于英文的，我选择一个并将其整理成了中文
 
+# 已经在nvidia 的jetson nano上验证了代码的正确性
+
 作者：lengkujiaai@126.com
 
 目录及文件的介绍：
