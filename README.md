@@ -25,7 +25,7 @@ jupyterlab notebook中用python和opencv实现刷脸签到
 原文中推荐的安装是visual studio，还有cmake、dlib、fance_recognition、numpy、opencv-python。
 
 ## 理解问题:
-尽管opencv的人脸识别算法已经被开发出来好多年了，但是算法的运行速度和准确率一直不能很好的配合。不过，最近的一些改进露出了曙光。Facebook是一个很好的例子，他们只需要训练少数的图片就能够标记你和你的朋友，并且准确率高达98%。这是如何实现的呢，我们今天将使用Adam Geitgey开发的人脸识别库来复现类似的结果。让我们先看看他在论文（https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78）中解释的四个问题。
+尽管opencv的人脸识别算法已经被开发出来好多年了，但是算法的运行速度和准确率一直不能很好的配合。不过，最近的一些改进露出了曙光。Facebook是一个很好的例子，他们只需要训练少数的图片就能够标记你和你的朋友，并且准确率高达98%。这是如何实现的呢，我们今天将使用Adam Geitgey开发的人脸识别库来复现类似的结果。让我们先看看他在论文（ https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78 ）中解释的四个问题。
 
 ## 人脸识别是若干问题组成的：
 
@@ -293,7 +293,7 @@ cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
 opencv的人脸识别方法是面部识别中最简单和最快速的。
 
 
-另：
+# 另：
 
 1、2020-11-12，现供职于北京中电科卫星导航系统有限公司，本部门为研发中心。
 
@@ -307,6 +307,6 @@ opencv的人脸识别方法是面部识别中最简单和最快速的。
     
 后打开淘宝即可
 
-技术支持：
+# 技术支持：
 
 ![image](https://github.com/lengkujiaai/Face-Recognition/blob/main/readmeImages/%E5%85%AC%E5%8F%B8%E4%BA%A7%E5%93%81.png)
