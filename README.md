@@ -1,6 +1,8 @@
 # Face-Recognition
 jupyterlab notebook中用python和opencv实现刷脸签到
 
+网络上有很多已经实现的基于opencv或其他算法的人脸识别代码，但多少是基于英文的，我选择一个并将其整理成了中文
+
 作者：lengkujiaai@126.com
 
 目录及文件的介绍：
@@ -15,22 +17,30 @@ jupyterlab notebook中用python和opencv实现刷脸签到
 
 
 
-https://www.murtazahassan.com/face-recognition-opencv/
-
-用opencv实现人脸识别
+# 用opencv实现人脸识别
 
 我们将要学习如何利用opencv准确的识别人脸。首先，我们简单的学习一下理论和基本的实现；接着，我们会用网络摄像头探测并记录人脸后记录到excel表格中做为一个出席会议的项目。人脸识别在初学者和在计算机视觉领域经验丰富的人中是一个很流行的话题。因为人脸识别在众多的应用中都非常有用。
-安装：
+
+## 安装：
 原文中推荐的安装是visual studio，还有cmake、dlib、fance_recognition、numpy、opencv-python。
-理解问题:
+
+## 理解问题:
 尽管opencv的人脸识别算法已经被开发出来好多年了，但是算法的运行速度和准确率一直不能很好的配合。不过，最近的一些改进露出了曙光。Facebook是一个很好的例子，他们只需要训练少数的图片就能够标记你和你的朋友，并且准确率高达98%。这是如何实现的呢，我们今天将使用Adam Geitgey开发的人脸识别库来复现类似的结果。让我们先看看他在论文（https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78）中解释的四个问题。
-人脸识别是若干问题组成的：
+
+## 人脸识别是若干问题组成的：
+
 1、首先，查看一张图片并找到上面所有的人脸
+
 2、第二，聚焦于不同的脸，即便这张脸是偏转的方向或不正常的光照，能识别出这是同一个人
+
 3、第三，能够从脸上找到唯一的特征来区别于其他的脸----比如眼睛的大小，脸的长度等
+
 4、最后，根据这张脸唯一的特征和你已知的所有人脸来确定其名字
 
+参考英文链接：https://www.murtazahassan.com/face-recognition-opencv/
+
 ## 人脸识别：
+
 首先，引入相关库
 
 Import face_recognition
