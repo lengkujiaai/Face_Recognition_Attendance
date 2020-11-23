@@ -11,7 +11,7 @@ jupyterlab notebook中用python和opencv实现刷脸签到
 
 1、images是基础知识.ipynb里用到的图片，基础知识由3步组成
 
-2、其中step1.py和step2.py是属于基础知识，和基础知识.ipynb内容基本一样，知识py文件可以用cv2.imshow()显示图片，而ipynb不能用该方法
+2、其中step1.py和step2.py是属于基础知识，和基础知识.ipynb内容基本一样，只是py文件可以用cv2.imshow()显示图片，而ipynb不能用该方法
 
 3、其中step3_false.py和step3_true.py也属于基础知识
 
