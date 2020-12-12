@@ -308,6 +308,10 @@ cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
 
 做这些是检查和对应脸的相似的是否小于0.5。如果大于0.5，意味着这个人是陌生人，并把名字标记成unknowm，并且标记出席
 
+在终端调用“python3  签到存储的脚本.py”可以看到下面的效果，识别到的人脸存储到Attendance.csv中
+
+![image](https://github.com/lengkujiaai/Face_Recognition_Attendance/blob/main/readmeImages/attendance.gif)
+
 # 结论
 opencv的人脸识别方法是面部识别中最简单和最快速的。
 
