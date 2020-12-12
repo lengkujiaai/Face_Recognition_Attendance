@@ -310,6 +310,8 @@ cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
 
 在终端调用“python3  签到存储的脚本.py”可以看到下面的效果，识别到的人脸存储到Attendance.csv中
 
+这个就算对于nano来说运算量有点大，速度有点慢
+
 ![image](https://github.com/lengkujiaai/Face_Recognition_Attendance/blob/main/readmeImages/attendance.gif)
 
 # 结论
