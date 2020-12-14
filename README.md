@@ -314,6 +314,8 @@ cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
 
 ![image](https://github.com/lengkujiaai/Face_Recognition_Attendance/blob/main/readmeImages/attendance.gif)
 
+我们来看看识别人脸后的记录：
+![image](https://github.com/lengkujiaai/Face_Recognition_Attendance/blob/main/readmeImages/attendance_record.png)
 # 结论
 opencv的人脸识别方法是面部识别中最简单和最快速的。
 
