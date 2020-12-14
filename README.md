@@ -310,11 +310,9 @@ cv2.putText(img,name,(x1+6,y2-6),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),2)
 
 在终端调用“python3  签到存储的脚本.py”可以看到下面的效果，识别到的人脸存储到Attendance.csv中
 
-这个就算对于nano来说运算量有点大，速度有点慢
+这个就算对于nano来说运算量有点大，速度有点慢.我们来看看识别人脸的效果及对应的记录
 
 ![image](https://github.com/lengkujiaai/Face_Recognition_Attendance/blob/main/readmeImages/attendance.gif)
-
-我们来看看识别人脸后的记录：
 ![image](https://github.com/lengkujiaai/Face_Recognition_Attendance/blob/main/readmeImages/attendance_record.png)
 # 结论
 opencv的人脸识别方法是面部识别中最简单和最快速的。
