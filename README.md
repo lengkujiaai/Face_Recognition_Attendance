@@ -327,9 +327,6 @@ opencv的人脸识别方法是面部识别中最简单和最快速的。
 3、我们属于提供技术支持的，本项目就是北京某高中老师要求的功能。
 
 
-    
-后打开淘宝即可
-
 # 技术支持：
 
-![image](https://github.com/lengkujiaai/Face-Recognition/blob/main/readmeImages/%E5%85%AC%E5%8F%B8%E4%BA%A7%E5%93%81.png)
+![image](https://github.com/lengkujiaai/jetbot_nano_students_contest/blob/main/image/zhangzong_weixin.png)
